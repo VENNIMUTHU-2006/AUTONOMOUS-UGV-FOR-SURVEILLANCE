@@ -1,0 +1,177 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+
+<world name="two_room_world">
+
+<!-- Light -->
+<include>
+  <uri>model://sun</uri>
+</include>
+
+<!-- Ground -->
+<include>
+  <uri>model://ground_plane</uri>
+</include>
+
+<!-- ================= ROOM A ================= -->
+
+<!-- Left wall -->
+<model name="roomA_wall1">
+  <static>true</static>
+  <pose>0 4 0.5 0 0 0</pose>
+  <link name="wall">
+    <collision name="collision">
+      <geometry><box><size>8 0.2 1</size></box></geometry>
+    </collision>
+    <visual name="visual">
+      <geometry><box><size>8 0.2 1</size></box></geometry>
+    </visual>
+  </link>
+</model>
+
+<!-- Bottom wall -->
+<model name="roomA_wall2">
+  <static>true</static>
+  <pose>0 -4 0.5 0 0 0</pose>
+  <link name="wall">
+    <collision name="collision">
+      <geometry><box><size>8 0.2 1</size></box></geometry>
+    </collision>
+    <visual name="visual">
+      <geometry><box><size>8 0.2 1</size></box></geometry>
+    </visual>
+  </link>
+</model>
+
+<!-- Back wall -->
+<model name="roomA_wall3">
+  <static>true</static>
+  <pose>-4 0 0.5 0 0 1.57</pose>
+  <link name="wall">
+    <collision name="collision">
+      <geometry><box><size>8 0.2 1</size></box></geometry>
+    </collision>
+    <visual name="visual">
+      <geometry><box><size>8 0.2 1</size></box></geometry>
+    </visual>
+  </link>
+</model>
+
+<!-- Door wall part 1 -->
+<model name="roomA_wall4">
+  <static>true</static>
+  <pose>2 0 0.5 0 0 1.57</pose>
+  <link name="wall">
+    <collision name="collision">
+      <geometry><box><size>4 0.2 1</size></box></geometry>
+    </collision>
+    <visual name="visual">
+      <geometry><box><size>4 0.2 1</size></box></geometry>
+    </visual>
+  </link>
+</model>
+
+<!-- Door wall part 2 -->
+<model name="roomA_wall5">
+  <static>true</static>
+  <pose>2 3 0.5 0 0 1.57</pose>
+  <link name="wall">
+    <collision name="collision">
+      <geometry><box><size>2 0.2 1</size></box></geometry>
+    </collision>
+    <visual name="visual">
+      <geometry><box><size>2 0.2 1</size></box></geometry>
+    </visual>
+  </link>
+</model>
+
+
+<!-- ================= ROOM B ================= -->
+
+<!-- Right wall -->
+<model name="roomB_wall1">
+  <static>true</static>
+  <pose>8 0 0.5 0 0 1.57</pose>
+  <link name="wall">
+    <collision name="collision">
+      <geometry><box><size>8 0.2 1</size></box></geometry>
+    </collision>
+    <visual name="visual">
+      <geometry><box><size>8 0.2 1</size></box></geometry>
+    </visual>
+  </link>
+</model>
+
+<!-- Top wall -->
+<model name="roomB_wall2">
+  <static>true</static>
+  <pose>4 4 0.5 0 0 0</pose>
+  <link name="wall">
+    <collision name="collision">
+      <geometry><box><size>8 0.2 1</size></box></geometry>
+    </collision>
+    <visual name="visual">
+      <geometry><box><size>8 0.2 1</size></box></geometry>
+    </visual>
+  </link>
+</model>
+
+<!-- Bottom wall -->
+<model name="roomB_wall3">
+  <static>true</static>
+  <pose>4 -4 0.5 0 0 0</pose>
+  <link name="wall">
+    <collision name="collision">
+      <geometry><box><size>8 0.2 1</size></box></geometry>
+    </collision>
+    <visual name="visual">
+      <geometry><box><size>8 0.2 1</size></box></geometry>
+    </visual>
+  </link>
+</model>
+
+
+<!-- ================= OBSTACLES ================= -->
+
+<!-- Box obstacle -->
+<model name="box1">
+  <static>true</static>
+  <pose>-1 1 0.4 0 0 0</pose>
+  <link name="box">
+    <collision name="collision">
+      <geometry><box><size>0.8 0.8 0.8</size></box></geometry>
+    </collision>
+    <visual name="visual">
+      <geometry><box><size>0.8 0.8 0.8</size></box></geometry>
+    </visual>
+  </link>
+</model>
+
+<model name="box2">
+  <static>true</static>
+  <pose>5 -1 0.4 0 0 0</pose>
+  <link name="box">
+    <collision name="collision">
+      <geometry><box><size>0.8 0.8 0.8</size></box></geometry>
+    </collision>
+    <visual name="visual">
+      <geometry><box><size>0.8 0.8 0.8</size></box></geometry>
+    </visual>
+  </link>
+</model>
+
+<model name="box3">
+  <static>true</static>
+  <pose>6 2 0.4 0 0 0</pose>
+  <link name="box">
+    <collision name="collision">
+      <geometry><box><size>0.8 0.8 0.8</size></box></geometry>
+    </collision>
+    <visual name="visual">
+      <geometry><box><size>0.8 0.8 0.8</size></box></geometry>
+    </visual>
+  </link>
+</model>
+
+</world>
+</sdf>
