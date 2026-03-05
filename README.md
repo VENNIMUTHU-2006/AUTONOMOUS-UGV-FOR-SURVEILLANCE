@@ -425,7 +425,11 @@ This system can be extended to operate as a **warehouse robot, inspection robot,
 
 # Author
 
-Muhesh Kumar
-Mechanical Engineer
-Embedded Systems & Robotics Enthusiast
-Forge Innovation & Venture
+Team 12 - 
+Surendhar
+Sanjay
+Boopathy
+Venni
+Sampaul
+Sundhar
+Jayamani
